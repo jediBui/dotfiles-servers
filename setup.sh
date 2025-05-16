@@ -25,6 +25,6 @@ git clone --depth 1 https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_C
 echo "==> Linking dotfiles..."
 ln -sf "$HOME/dotfiles/.zshrc" "$HOME/.zshrc"
 #mkdir -p "$HOME/.config"
-#ln -sf "$HOME/dotfiles/.config/starship.toml" "$HOME/.config/starship.toml"
+ln -sf "$HOME/dotfiles/.config/starship.toml" "$HOME/.config/starship.toml"
 
 echo "==> Installation complete. To use Zsh now, run: zsh"
