@@ -23,8 +23,8 @@ git clone --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting.git $ZS
 git clone --depth 1 https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete || true
 
 echo "==> Linking dotfiles..."
-ln -sf "$HOME/dotfiles/.zshrc" "$HOME/.zshrc"
+ln -sf "$HOME/dotfiles-servers/.zshrc" "$HOME/.zshrc"
 #mkdir -p "$HOME/.config"
-ln -sf "$HOME/dotfiles/.config/starship.toml" "$HOME/.config/starship.toml"
+ln -sf "$HOME/dotfiles-servers/.config/starship.toml" "$HOME/.config/starship.toml"
 
 echo "==> Installation complete. To use Zsh now, run: zsh"
