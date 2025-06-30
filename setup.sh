@@ -2,10 +2,10 @@
 set -e
 
 echo "==> Updating packages..."
-sudo apt update
+sudo apt update && sudo apt upgrade -y
 
 echo "==> Installing Zsh, Git, Curl..."
-sudo apt install -y zsh git curl
+sudo apt install -y zsh git curl vim
 
 echo "==> Installing Oh My Zsh..."
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
@@ -25,6 +25,6 @@ git clone --depth 1 https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_C
 echo "==> Linking dotfiles..."
 ln -sf "$HOME/dotfiles-servers/.zshrc" "$HOME/.zshrc"
 #mkdir -p "$HOME/.config"
-ln -sf "$HOME/dotfiles-servers/.config/starship.toml" "$HOME/.config/starship.toml"
+#ln -sf "$HOME/dotfiles-servers/.config/starship.toml" "$HOME/.config/starship.toml"
 
 echo "==> Installation complete. To use Zsh now, run: zsh"
